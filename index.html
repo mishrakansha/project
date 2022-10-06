@@ -64,6 +64,8 @@
             border: 1px solid #29d9d5;
             padding: 9px;
             border-radius: 5px;
+            margin-top: 7px;
+            width: 100px;
         }
         
         .photoblog {
@@ -165,12 +167,45 @@
         }
         
         .icons {
-            font-size: 20px;
+            font-size: 15px;
             color: #29d9d5;
+            display: flex;
+            gap: 5px;
+        }
+        
+        .images:hover .centered {
+            opacity: 1;
+        }
+        
+        .images:hover {
+            filter: grayscale(0.5);
+        }
+        
+        .centered:hover {
+            opacity: 1;
+        }
+        
+        .ic {
+            border: 1px solid #29d9d5;
+            padding: 6px;
+            font-size: 9px;
+            border-radius: 50%;
+        }
+        
+        .centered {
+            opacity: 0;
+            position: relative;
+            top: -96px;
+            left: -165px;
+            font-size: 20px;
         }
         
         h1 {
             font-size: 20px;
+        }
+        
+         ::placeholder {
+            color: white;
         }
     </style>
 </head>
@@ -202,28 +237,34 @@
     <section class="item">
         <div>
             <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
         </div>
         <div>
             <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
         </div>
         <div>
             <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
         </div>
         <div>
             <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
         </div>
         <div>
             <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
         </div>
         <div>
             <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
         </div>
         <div>
             <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
         </div>
-        <div>
-            <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
-        </div>
+
+
     </section>
     <section class="letscap">
         <div class="hedsky">Start your journey</div>
@@ -237,7 +278,7 @@
         <div class="first">
             <h1>Photography</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-            <div class="icons"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram"></i> </div>
+            <div class="icons"><i class="fa-brands fa-facebook ic"></i><i class="fa-brands fa-twitter ic"></i> <i class="fa-brands fa-instagram ic"></i> <i class="fa-brands fa-linkedin ic"></i></div>
 
         </div>
         <div class="second">
@@ -251,8 +292,7 @@
             <h1>Newsletters</h1>
             <p>
                 Subscribe For Latest Upadates</p>
-            <input type="email" name="" id="" value="enter your name" />
-            <br>
+            <input type="email" name="" id="" placeholder="enter your name" />
             <button class="buttonnav">Subscribe</button>
             </div>
         </footer>
